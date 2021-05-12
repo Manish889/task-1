@@ -1,0 +1,137 @@
+@media screen and (max-width: 768px) {
+  .logo span {
+    font-size: 10px;
+    position: absolute;
+    top: 70px;
+    left: 140px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    width: 50%;
+    background-color: blueviolet;
+    height: 83vh;
+    display: none;
+    transform: translateX(100%);
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav :checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(0%);
+    animation: animate 0.5s ease-in;
+  }
+  @keyframes animate {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .homepage {
+    display: block;
+    margin-left: 2rem;
+  }
+  .homepage-elm {
+    padding: 2rem 0;
+  }
+  .homepage p {
+    max-width: 100%;
+  }
+  .cards {
+    display: block;
+    max-width: 90%;
+  }
+  .services-box {
+    display: block;
+    max-width: 100%;
+    margin: 3rem 2rem;
+  }
+
+  .testimonial {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .testimonial p {
+    max-width: 100%;
+  }
+
+  .t-text {
+    max-width: 100%;
+  }
+  .t-text p {
+    margin-top: 1rem;
+  }
+  .t-img-box {
+    display: none;
+  }
+  .profile {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .h-details {
+    display: block;
+    padding: 0;
+  }
+
+  .h-service {
+    margin-top: 2rem;
+  }
+  .h-work {
+    margin-top: 2rem;
+  }
+
+  .blog {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  .blog-date {
+    position: relative;
+    left: 4rem;
+  }
+  .blog-btn {
+    color: #0080ff;
+    position: relative;
+    left: 20px;
+  }
+
+  .contactus {
+    display: block;
+    max-width: 100%;
+  }
+  .contactus input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .contactus textarea {
+    height: 100px;
+    width: 250px;
+  }
+  #contactus a {
+    position: relative;
+    left: 10rem;
+    bottom: 3rem;
+  }
+
+  .footer {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}

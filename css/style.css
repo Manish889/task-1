@@ -1,0 +1,683 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+.headings {
+  margin: 5rem auto 0;
+  width: 13rem;
+  font-size: 1.5rem;
+  border-bottom: 4px solid #0080ff;
+  border-width: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 30px;
+  color: #0080ff;
+  letter-spacing: 3px;
+}
+.logo i {
+  font-size: 45px;
+  margin-right: 12px;
+  position: relative;
+  top: 10px;
+}
+
+.logo span {
+  font-size: 10px;
+  position: absolute;
+  top: 70px;
+  left: 170px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 17vh;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav-active {
+  border-top: 3px solid #0080ff;
+  padding-top: 41px;
+}
+.nav-links a {
+  color: #222831;
+}
+.nav-links a:hover {
+  border-top: 3px solid #0080ff;
+  padding-top: 41px;
+}
+
+#nav-toggle {
+  position: absolute;
+  display: none;
+}
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 4px;
+  margin: 3px;
+  background-color: #000;
+}
+
+/* homepage section */
+#homepage {
+  background-color: #707070;
+}
+.homepage {
+  max-width: 80%;
+  height: 87vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 135px;
+}
+.homepage p {
+  max-width: 50%;
+  margin-bottom: 1.8rem;
+  color: #424642;
+}
+
+.homepage h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.homepage h4 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #0080ff;
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+
+.home-btn {
+  padding: 13px 25px;
+  background-color: #0080ff;
+  text-transform: uppercase;
+  color: #f1f1f1;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.home-btn:hover {
+  background-color: #0277ae;
+  transition: 500ms;
+  opacity: 0.8;
+}
+
+/* Cards */
+
+.cards {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 450px;
+  margin: 0 auto;
+  color: #f1f1f1;
+}
+
+.card {
+  background-color: #0080ff;
+  padding: 3rem;
+}
+
+.card p {
+  margin: 3rem 0;
+  line-height: 2;
+  font-size: 0.8rem;
+}
+
+.card-btn {
+  padding: 0.5rem 1.5rem;
+  border: 3px solid #f1f1f1;
+  color: #f1f1f1;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.card h1 {
+  font-size: 1.2rem;
+}
+
+.card:nth-child(2) {
+  background-color: #008ecc;
+}
+.card:nth-child(3) {
+  background-color: #73c2fb;
+}
+
+/* services */
+
+.services-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 5rem auto;
+}
+.openhrs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 4rem;
+  grid-auto-rows: 3.5rem;
+}
+
+.head {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.days,
+.timing {
+  margin-top: 4.5rem;
+}
+.service div {
+  display: flex;
+  align-items: center;
+}
+.service p {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+.service i {
+  font-size: 2.4rem;
+  color: #0080ff;
+}
+
+.openhrs .days li {
+  font-size: 0.9rem;
+  padding: 8px;
+  background-color: #e1e5ea;
+  margin-bottom: 1rem;
+}
+.openhrs .timing li {
+  font-size: 0.9rem;
+  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+/* testimonial section */
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.t-text {
+  max-width: 45%;
+}
+.t-text h4 {
+  color: #0080ff;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.t-text h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.testimonial p {
+  max-width: 80%;
+  color: #424642;
+  font-style: italic;
+}
+.t-img {
+  width: 700px;
+  height: 400px;
+}
+
+.t-profile-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.profile-txt {
+  padding: 2rem;
+}
+
+.profile-txt p {
+  font-size: 0.9rem;
+  color: #0080ff;
+}
+
+/* testimonial section ends */
+
+/* doctor's deck */
+
+.doctor-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.doctor-card {
+  text-align: center;
+  height: 400px;
+}
+.doctor-img {
+  width: 200px;
+  height: 230px;
+  margin: 2rem auto;
+}
+
+.doctor-card p:nth-of-type(1) {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.doctor-card p:nth-of-type(2) {
+  color: #0080ff;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.doctor-card a {
+  padding: 7px;
+  color: #0080ff;
+  font-size: 18px;
+}
+/* end */
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 3rem;
+  justify-items: center;
+  background-color: #325288;
+  padding: 3rem;
+  color: #f1f1f1;
+  margin: 3rem 0;
+}
+
+.carousel-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.carousel p:nth-of-type(2) {
+  max-width: 70%;
+}
+
+.carousel p:nth-of-type(1) {
+  font-size: 1.5rem;
+  border-bottom: 4px solid #0080ff;
+  padding-bottom: 10px;
+}
+
+/* end */
+
+/* Hospital details section */
+
+.h-details {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 30% 35% 35%;
+  min-height: 70vh;
+  max-width: 80%;
+  margin: 0 auto;
+  column-gap: 2rem;
+}
+
+.h-headings {
+  font-size: 1.2rem;
+  border-bottom: 4px solid #0080ff;
+  width: 11rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.department {
+  max-width: 100%;
+}
+
+.department summary {
+  color: #f1f1f1;
+  padding: 1rem;
+  background-color: #0080ff;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.d-img {
+  max-width: 40%;
+  display: inline-block;
+  margin-right: 1.2rem;
+}
+.d-summery {
+  max-width: 50%;
+  display: inline-block;
+  position: relative;
+  bottom: 1rem;
+  font-size: 0.9rem;
+  color: #424642;
+  line-height: 2.3;
+}
+
+.department img {
+  width: 130px;
+  height: 130px;
+}
+
+/*  */
+
+.h-service {
+  max-width: 100%;
+}
+
+.h-service p:nth-of-type(2) {
+  max-width: 100%;
+  line-height: 2;
+  color: #707070;
+}
+
+.h-service ul {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.h-service li {
+  color: #222831;
+  padding: 10px;
+  list-style: square;
+}
+/*  */
+
+.h-work {
+  max-width: 100%;
+}
+
+.box-container {
+  display: flex;
+  padding: 0 2rem 1rem 0;
+}
+
+.box-container div {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  color: #f1f1f1;
+  text-transform: uppercase;
+}
+
+.box-container div:nth-of-type(1) {
+  background-color: #0080ff;
+}
+.box-container div:nth-of-type(2) {
+  background-color: #38a8d8;
+}
+
+.box-container div:nth-of-type(3) {
+  background-color: #58c1f1;
+}
+
+.h-work p:nth-of-type(2) {
+  font-size: 0.9rem;
+  margin: 0 auto;
+  height: auto;
+  line-height: 2;
+}
+
+.h-work div:nth-of-type(2) img {
+  margin-top: 1.5rem;
+  width: 320px;
+  height: 180px;
+}
+
+/* blog section */
+
+.blog {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 70vh;
+  max-width: 80%;
+  margin: 0 auto;
+  column-gap: 2rem;
+}
+
+.blog-card img {
+  width: 320px;
+  height: 250px;
+}
+
+.blog-date {
+  width: 70px;
+  height: 80px;
+  background-color: #0080ff;
+  position: relative;
+  top: 5rem;
+  text-align: center;
+  padding-top: 8px;
+  color: #f1f1f1;
+}
+
+.blog-date .comments {
+  background-color: #424642;
+  width: 70px;
+  height: 30%;
+  padding: 1.3rem;
+}
+.blog-date > p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.comments p {
+  font-size: 1.1rem;
+  display: flex;
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  margin: 2px 0;
+}
+
+.comments i {
+  margin-top: 5px;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.blog-card h3 {
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.blog-card > p {
+  color: #707070;
+  line-height: 2;
+}
+
+.blog-btn {
+  color: #0080ff;
+  position: relative;
+  top: 30px;
+  left: 220px;
+}
+
+/* end */
+
+/* Contact us section */
+
+.contactus {
+  display: grid;
+  grid-template-columns: 3.2fr 3.7fr 3.2fr 3.4fr;
+  grid-template-rows: 0.4fr 0.4fr 2.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Subject Subject Name Name"
+    "Email Email Patient Priority"
+    "Message Message Message Message";
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 5rem;
+  gap: 2rem;
+}
+
+.Subject {
+  grid-area: Subject;
+}
+
+.Name {
+  grid-area: Name;
+}
+
+.Email {
+  grid-area: Email;
+}
+
+.Patient {
+  grid-area: Patient;
+}
+
+.Priority {
+  grid-area: Priority;
+}
+
+.Message {
+  grid-area: Message;
+}
+
+.contactus input {
+  padding: 1rem;
+}
+
+.contactus textarea {
+  padding: 0.8rem;
+}
+#contactus a {
+  position: relative;
+  left: 35rem;
+  bottom: 2rem;
+}
+/* footer section */
+
+.bottom-strip {
+  width: 100%;
+  height: 130px;
+  background-color: #222831;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem 10rem;
+  background-color: #325288;
+  color: #f1f1f1;
+}
+
+.footer-style {
+  max-width: 80%;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+.footer-service li {
+  list-style: square;
+  cursor: pointer;
+}
+.footer-service li:hover {
+  color: #0080ff;
+  transition: 0.4s;
+}
+
+.tweet p span {
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+}
+
+.tweet-time {
+  color: #39b8f3;
+}
+
+.footer-contact a {
+  color: #f1f1f1;
+}
+.footer-contact a:hover {
+  color: #0080ff;
+  transition: 0.4s;
+}
+
+.footer-contact i {
+  margin-right: 0.8rem;
+}
+
+.address {
+  font-size: 15px;
+  margin: 1rem 0;
+}
+
+.footer-heading {
+  font-weight: bold;
+}
+
+.bottom-strip2 {
+  background-color: #707070;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: 1rem;
+  color: #f1f1f1;
+}
+
+/* ******** Contact Page********* */
+
+.contactpage-strip {
+  background-color: #0080ff;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.contactpage-strip p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.contactpage-strip p:nth-of-type(2) {
+  font-size: 0.9rem;
+  color: #f1f1f1;
+}
