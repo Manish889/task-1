@@ -5,21 +5,26 @@
     top: 50px;
     left: 125px;
   }
-  
   .navbar {
     min-height: 5vh;
     padding: 0.5rem;
   }
-  
   .nav-links {
     position: absolute;
-    top: 13vh;
+    top: 11vh;
     right: 0;
     width: 50%;
     background-color: blueviolet;
-    height: 83vh;
+    height: 95vh;
     display: none;
     transform: translateX(100%);
+  }
+  .nav-active {
+    border-style: none;
+  }
+  .nav-links a:hover {
+    color: #0080ff;
+    border-style: none;
   }
 
   .burger {
