@@ -54,10 +54,16 @@
   }
   .services-box {
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     margin: 3rem 2rem;
   }
 
+  .service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0.5rem;
+    column-gap: 10px;
+  }
   .testimonial {
     display: block;
     width: 90%;
