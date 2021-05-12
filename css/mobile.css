@@ -5,7 +5,12 @@
     top: 80px;
     left: 140px;
   }
-
+  
+  .navbar {
+    min-height: 5vh;
+    padding: 0.5rem;
+  }
+  
   .nav-links {
     position: absolute;
     top: 13vh;
