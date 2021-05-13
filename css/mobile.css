@@ -51,6 +51,7 @@
   .homepage {
     display: block;
     margin-left: 2rem;
+    height: 95vh;
   }
   .homepage-elm {
     padding: 2rem 0;
