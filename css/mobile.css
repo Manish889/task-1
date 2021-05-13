@@ -153,5 +153,37 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    grid-template-areas:
+      "footer-about footer-about"
+      "tweet tweet"
+      "footer-service footer-contact";
   }
+
+  .footer-about {
+    grid-area: footer-about;
+    text-align: center;
+    line-height: 2;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .tweet {
+    grid-area: tweet;
+  }
+  .footer-service {
+    grid-area: footer-service;
+  }
+  .footer-service li {
+    margin: 0;
+  }
+  .footer-contact {
+    grid-area: footer-contact;
+  }
+
+  /* .footer-about {
+    grid-column: span 2;
+  }
+
+  .tweet {
+    grid-column: span 4;
+  } */
 }
