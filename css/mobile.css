@@ -156,7 +156,7 @@
     grid-template-areas:
       "footer-about footer-about"
       "tweet tweet"
-      "footer-service footer-contact";
+      "footer-contact footer-contact";
   }
 
   .footer-about {
@@ -170,6 +170,7 @@
     grid-area: tweet;
   }
   .footer-service {
+    display: none;
     grid-area: footer-service;
   }
   .footer-service li {
@@ -177,6 +178,10 @@
   }
   .footer-contact {
     grid-area: footer-contact;
+  }
+
+  .footer-contact li {
+    margin-bottom: 1rem;
   }
 
   /* .footer-about {
