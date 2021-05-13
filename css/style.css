@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -248,7 +250,7 @@ body {
   font-size: 2.5rem;
 }
 
-.testimonial p {
+.t-text p {
   max-width: 80%;
   color: #424642;
   font-style: italic;
@@ -273,11 +275,15 @@ body {
 
 .profile-txt {
   padding: 2rem;
+  font-size: 0.9rem;
 }
 
 .profile-txt p {
-  font-size: 0.9rem;
+  width: 8rem;
   color: #0080ff;
+}
+.profile-txt span {
+  font-size: 0.7rem;
 }
 
 /* testimonial section ends */
@@ -337,6 +343,11 @@ body {
 
 .carousel p:nth-of-type(2) {
   max-width: 70%;
+  text-align: center;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+  line-height: 2;
 }
 
 .carousel p:nth-of-type(1) {
